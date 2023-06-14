@@ -49,7 +49,7 @@ print(OR(np.array([0, 1])))
 print(OR(np.array([1, 0])))
 print(OR(np.array([1, 1])))
 
-# 다중 퍼셉트론으로 xor 게이트 구현ㄴ하기
+# 다중 퍼셉트론으로 xor 게이트 구현하기
 # XOR  : 0,0 => 0 / 0,1 => 1 / 1,0 => 1 / 1,1 => 0
 # XOR = (NAND,OR => AND)
 def XOR(xnp):
