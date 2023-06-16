@@ -62,3 +62,14 @@ def identity_function(a):
     print(a)
 
 y = identity_function(a3) # 출력값을 식별함수를 이용해서 결과를 결정한다.
+
+# 소프트맥스 함수
+def softmax(a):
+    c = np.max(a)
+    exp_a = np.exp(a - c)
+    sum_exp_a = np.sum(exp_a)
+    y = exp_a / sum_exp_a
+
+    return y
+
+print(softmax(np.array([1010, 1000, 990])))
